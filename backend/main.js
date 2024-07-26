@@ -17,7 +17,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 
 app.get("/", (req, res) => {
-    res.setEncoding("App is running");
+    res.send("App is running");
 })
 
 app.use("/api/v1/auth", authRouter);
