@@ -81,6 +81,7 @@ const generateOTP = async (req, res) => {
                 message: `OTP not sent to ${email}`,
                 data: {},
             });
+            return;
         }
 
 
